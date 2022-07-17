@@ -1,0 +1,463 @@
+@charset "UTF-8";
+/*added as shown in the example but the validator reports error here*/
+
+body{
+    margin: 0;
+    background-color: black;
+    /*text-decoration: none;*/
+}
+
+body #page{
+    margin: 0 auto;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    /*text-decoration: none;*/
+}
+
+header .logo a{
+    text-decoration: none;
+}
+
+h1{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.logo{
+    display: inline-block;
+    /*background-color: aqua;*/
+}
+nav a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.mainNav ul a:hover, .catalogue ul a:hover, .buy a:hover, #mail a:hover{
+    color: white;
+}
+.current a{
+    color: white;
+}
+
+.buy a{
+    text-decoration: none;
+    color: dimgray;
+}
+video{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin:0 auto;
+}
+
+p{
+    color: white;
+}
+
+#about img{
+    display: block;
+    margin: auto;
+}
+#mail a{
+    text-decoration: none;
+    color: dimgray;
+}
+
+
+
+/*Laptop Version (1920*1080)*/
+@media screen and (min-width: 1080px) {
+    h1{
+        font-size: 3.5em;
+    }
+    h2{
+        width:500px;
+        margin:20px auto;
+        text-align: center;
+    }
+    /*#subtitle{
+        width:100%;
+    }*/
+    .logo{
+        width: 50%;
+    }
+    header{
+        height:150px;
+        margin:0 0 0 12%;
+    }
+    .mainNav li{
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+    .mainNav{
+        width: 37%;
+    }
+    .mainNav ul{ 
+        /*background-color: crimson;*/
+        width: 470px;
+        position: relative;
+	    left: 140%;
+        top: -105px;
+        padding: 0;
+    }
+    .mainNav ul a{
+        font-size: 1.8em;
+    }    
+    .catalogue li{
+        display: inline-block;
+        width: 200px;
+        border:1px solid dimgray;
+        border-radius: 8px;
+        text-align: center;
+        background-color: black;
+    }
+
+    .catalogue{
+        z-index: 1;
+        width: 100%; 
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: hsla(0, 0%, 0%, 0.5);
+    }
+    .catalogue ul{
+        width: 900px;
+        margin:auto;        
+    }
+
+    /*#video p{
+        font-size: 1.2em;
+        text-align: center;
+        margin: 0 0 15px 0;
+    }*/
+    footer{
+        height: 70px;
+    }
+    footer p{
+        margin: 0 auto;
+        color:white;        
+        height: 50px;
+        width: 500px;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        line-height: 50px;
+    }
+
+    article{
+        border: 1.5px solid dimgray;
+        border-radius: 5px;
+        /*background-color: black;*/
+        width:80%;
+        height:400px;
+        margin:50px auto;
+        position: relative;
+        /*make article the first non-static parent element of .buy*/
+    }
+    article img{
+        float: left;
+    }
+    article p{
+        /*display: inline-block;
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+        position:relative;
+        left: 1%;
+        top: 60px;*/
+        margin: 50px 50px auto 650px;
+        font-size: 1.2em;
+ 
+    }
+    .buy {
+        display: inline-block;
+        text-align: center;
+        width: 15%;
+        padding: 5px;
+        border: 1px solid dimgray;
+        border-radius: 5px;
+        position: absolute;
+        left: 75%;
+        top: 300px;
+    }
+
+    #about p{
+        display: block;
+        width: 600px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    #mail{
+        width: 150px;
+        text-align: center;
+        border: 1px solid dimgray;
+        border-radius: 8px;
+        margin: auto;
+    }
+}
+
+
+
+/*Tablet landscape version*/
+@media screen and (max-width: 1079px) and (orientation: landscape) /*and (orientation: portrait)*/{
+    
+    h1{
+        font-size: 2.5em; 
+    }
+    h2{
+        width:400px;
+        margin:20px auto;
+        text-align: center;
+    }
+    .logo{
+        width: 40%;
+    }
+    header{
+        height: 120px;
+        margin: 0 0 0 5%;
+    }
+    .mainNav li{
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+    .mainNav ul{
+        width: 55%;
+        position: relative;
+        left: 40%;
+        top: -75px;
+    }
+    .mainNav ul a{
+        font-size: 1.6em;
+    }
+    .catalogue{
+        width: 100%;
+        z-index: 1;
+        width: 100%; 
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        
+    }
+    .catalogue li{
+        display: inline-block;
+        width: 200px;
+        border:1px solid dimgray;
+        border-radius: 8px;
+        text-align: center;
+        background-color: black;
+    }
+    .catalogue ul{
+        width: 900px;
+        margin: 20px auto;
+    }
+    footer{
+        height: 50px;
+    }
+    footer p{
+        margin: 0 auto;
+        color: white;
+        height: 30px;
+        width: 400px;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        line-height: 30px;
+    }
+    article{
+        border: 1.5px solid dimgray;
+        border-radius: 5px;
+        /*background-color: black;*/
+        width:80%;
+        height:320px;
+        margin:50px auto;
+        position: relative;
+    }
+    article img{
+        float: left;
+        width: 480px;
+        height: 320px;
+    }
+    article img.square{
+        width: 320px;
+        height: 320px;
+    }
+    article p{
+        margin: 50px 50px auto 520px;
+        font-size: 1.2em;
+    }
+    .buy{
+        display: inline-block;
+        text-align: center;
+        width: 15%;
+        padding: 5px;
+        border: 1px solid dimgray;
+        border-radius: 5px;
+        position: absolute;
+        left: 73%;
+        top: 250px;
+    }
+    #about p{
+        display: block;
+        width: 600px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    #mail{
+        width: 200px;
+        text-align: center;
+        border: 1px solid dimgray;
+        border-radius: 8px;
+        position: relative;
+        margin: auto;
+    }
+    
+}
+
+/*Tablet portrait version*/ 
+@media screen and (max-width: 1079px) and (orientation: portrait){
+    h1{
+        font-size: 2.7em
+    }
+    h2{
+        font-size: 1.8em;
+        width: 500px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    header{
+        height: 190px;
+    }
+    .mainNav li{
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+    .mainNav ul{
+        width: 80%;
+        position: relative;
+        left: 4%;       
+    }
+    /*.mainNav ul #first{
+        width: 80%;
+        position: relative;
+        left: 60%;       
+    }*/
+    .mainNav ul a{
+        font-size: 1.7em;
+    }
+    .catalogue{
+        z-index: 1;
+        width: 100%; 
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: hsla(0, 0%, 0%, 0.5);
+    
+    }
+    .catalogue li{
+        display: inline;
+        width: 120px;
+        height: 40px;
+        border:2px solid dimgray;
+        border-radius: 8px;
+        text-align: center;
+        padding: 4px;
+        background-color: black;
+    }
+    .catalogue li a{
+        display: inline-block;
+        font-size: 1.1em;
+    }
+    .catalogue ul{
+        padding-left: 20px;
+    }
+    footer{
+        height: 50px;
+    }
+    footer p{
+        margin: 0 auto;
+        color: white;
+        height: 30px;
+        width: 400px;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        line-height: 30px;
+    }
+    article{
+        
+        border: 2px solid dimgray;
+        border-radius: 3px;
+        width: 482px;
+        height: 630px;
+        margin: 50px auto;
+        position: relative;
+    }
+    article img{
+        width: 480px;
+        height: 320px;
+    }
+    article img.square{
+        width: 480px;
+        height: 480px;
+    }
+    article p{
+        margin: auto 20px auto 20px;
+        font-size: 1.2em;
+    }
+    .buy{
+        display:block;
+        text-align: center;
+        width: 30%;
+        padding: 5px;
+        border: 1px solid dimgray;
+        border-radius: 5px;
+        position: absolute;
+        top: 550px;
+        left: 163px;
+    }
+    .buy a{
+        font-size: 1.4em;
+    }
+    #about img{
+        width: 480px;
+        height: auto;
+    }
+    #about p{
+        display: block;
+        width: 450px;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 1.2em;
+    }
+    #mail{
+        width: 200px;
+        text-align: center;
+        border: 1px solid dimgray;
+        border-radius: 8px;
+        position: relative;
+        margin: auto auto 70px auto;
+    }
+    #mail a{
+        font-size: 1.5em;
+    }
+    video{
+        width: 100%;
+        margin: auto auto 70px auto;
+    }
+}
